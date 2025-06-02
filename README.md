@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-unsloth_zoo-green.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-unsloth__zoo-green.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/unsloth_zoo.svg)](https://anaconda.org/conda-forge/unsloth_zoo) |
 
 Installing unsloth_zoo
 ======================
