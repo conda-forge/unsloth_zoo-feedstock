@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pytorch
+    - pytorch <=2.7.0
     - triton
     - packaging
     - tyro
