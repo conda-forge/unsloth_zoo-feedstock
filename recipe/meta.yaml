@@ -1,5 +1,5 @@
 {% set name = "unsloth_zoo" %}
-{% set version = "2025.10.1" %}
+{% set version = "2025.10.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unsloth_zoo-{{ version }}.tar.gz
-  sha256: aa64adde7360f9e9c3eea04ecae626a2c7418fc869e386ae0846f7095d7cf497
+  sha256: 92c145c2734b5fda496af943fb31302d365d686e1a08325bd5b19f15cb5a108d
 
 build:
   noarch: python
@@ -29,15 +29,15 @@ requirements:
     - triton
     - packaging >=24.1
     - tyro
-    - transformers >=4.51.3,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,<=4.55.4
-    - datasets >=3.4.1,<4
+    - transformers >=4.51.3,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,<=4.56.2
+    - datasets >=3.4.1,!=4.0.0,!=4.1.0
     - sentencepiece >=0.2.0
     - tqdm
     - psutil
     - wheel >=0.42.0
     - numpy
     - accelerate >=0.34.1
-    - trl >=0.7.9,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,!=0.15.0,!=0.19.0,<0.23.0
+    - trl >=0.7.9,!=0.9.0,!=0.9.1,!=0.9.2,!=0.9.3,!=0.15.0,!=0.19.0,<=0.23.0
     - peft >=0.7.1,!=0.11.0
     - protobuf
     - huggingface_hub >=0.34.0
@@ -47,6 +47,8 @@ requirements:
     - regex
     - msgspec
     - typing_extensions
+    - filelock
+    - mistral-common
 
 test:
   # unsloth_zoo needs unsloth and vice-versa
