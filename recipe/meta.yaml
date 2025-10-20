@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - pytorch >=2.4.0
-    - torchao
+    - torchao >=0.13,!=0.14
     - triton
     - packaging >=24.1
     - tyro
