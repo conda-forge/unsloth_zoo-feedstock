@@ -1,5 +1,5 @@
 {% set name = "unsloth_zoo" %}
-{% set version = "2025.11.3" %}
+{% set version = "2025.11.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unsloth_zoo-{{ version }}.tar.gz
-  sha256: 6c0b87ad8c87f9c808755637f300c15f8e7b6bafe103cabc9532f81ae0434933
+  sha256: 41bf67e1d1ece78e95f478e87898f326a6aae66b1427f20152ffa1022051e1ad
 
 build:
   noarch: python
@@ -29,8 +29,8 @@ requirements:
     - triton
     - packaging >=24.1
     - tyro
-    - transformers >=4.51.3,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,<=4.56.2
-    - datasets >=3.4.1,!=4.0.0,!=4.1.0
+    - transformers >=4.51.3,!=4.52.0,!=4.52.1,!=4.52.2,!=4.52.3z,!=4.53.0,!=4.54.0,!=4.55.0,!=4.55.1,<=4.56.2
+    - datasets >=3.4.1,!=4.0.0,!=4.1.0,<4.4.0
     - sentencepiece >=0.2.0
     - tqdm
     - psutil
