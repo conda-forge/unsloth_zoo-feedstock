@@ -1,5 +1,5 @@
 {% set name = "unsloth_zoo" %}
-{% set version = "2026.6.2" %}
+{% set version = "2026.6.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unsloth_zoo-{{ version }}.tar.gz
-  sha256: 54e53c02d430d0f3bb92c21b5e593459a173ff386273c4836a17310e66df3e4f
+  sha256: f9d5eeac8b07b8fd5c76f09daff2f657e3a51ca1f663198b646905ae321c4171
 
 build:
   noarch: python
