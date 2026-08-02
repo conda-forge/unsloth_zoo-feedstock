@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pytorch >=2.4.0
+    - pytorch >=2.4.0,<2.13
     - torchao >=0.13,!=0.14
     - triton
     - packaging >=24.1
