@@ -1,29 +1,32 @@
-{% set name = "unsloth_zoo" %}
-{% set version = "2026.8.16" %}
-{% set python_min = "3.10" %}
+schema_version: 1
+
+context:
+  name: unsloth_zoo
+  version: "2026.8.16"
+  python_min: "3.10"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/unsloth_zoo-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/unsloth_zoo-${{ version }}.tar.gz
   sha256: 44c0a2265981905fe9886d76899a095cff766812364f535be0e5e2faa66fda98
 
 build:
+  number: 1
   noarch: python
   script:
-    - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=${{ python_min }}
     - pytorch >=2.4.0,<2.13
     - torchao >=0.13,!=0.14
     - triton
@@ -50,21 +53,19 @@ requirements:
     - filelock
     - mistral-common
 
-test:
-  # unsloth_zoo needs unsloth and vice-versa
-  # imports:
-  #  - unsloth_zoo
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}.*
+tests:
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
 
 about:
-  home: https://github.com/unslothai/unsloth_zoo
   summary: Utils for Unsloth
   license: LGPL-3.0-only
   license_file: LICENSE
+  homepage: https://github.com/unslothai/unsloth_zoo
 
 extra:
   recipe-maintainers:
