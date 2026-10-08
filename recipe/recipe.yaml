@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: unsloth_zoo
   version: "2026.10.2"
-  python_min: "3.10"
 
 package:
   name: ${{ name|lower }}
