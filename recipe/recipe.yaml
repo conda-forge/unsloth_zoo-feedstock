@@ -57,6 +57,7 @@ tests:
       run:
         - pip
         - python ${{ python_min }}.*
+        - numpy <2.4
     script:
       - pip check
 
