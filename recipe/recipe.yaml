@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: unsloth_zoo
-  version: "2026.10.7"
+  version: "2026.10.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/unsloth_zoo-${{ version }}.tar.gz
-  sha256: 014cc7a893f914c4e8ce5ceba98e403e265249a0b0f3de0b9d36a4182cf7c8ca
+  sha256: 891944ae5549c57aae86f48293d8c0713e5e82691a61a13d0b2d5a08e1c57f18
 
 build:
   number: 0
